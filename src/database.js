@@ -62,17 +62,4 @@ export class Database {
       this.#persist()
     }
   }
-
-  patch(table, id, patch){
-    const rowIndex = this.#database[table].findIndex(row => row.id === id)
-
-    const { patchData } = patch
-
-    if (rowIndex > -1){
-      const { data } = this.#database[table][rowIndex]
-      this.#database[table][rowIndex]
-      console.log(JSON.stringify(patch));
-      // this.#persist()
-    }
-  }
 }
