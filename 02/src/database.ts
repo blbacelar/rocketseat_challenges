@@ -1,4 +1,4 @@
-import 'dotenv/config'
+/* eslint-disable prettier/prettier */
 import { Knex, knex as setupKnex } from 'knex'
 import { env } from './env'
 
